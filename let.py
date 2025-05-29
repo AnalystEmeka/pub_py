@@ -180,4 +180,23 @@ print('-----')
 # combinig postive with negative index
 print(animals[1:-2]) # displaying only the second item in the list
 print(animals[1:-1]) # displaying the 2nd and third item in the list
+print('-----')
 
+# Advance slicing from start:stop:step
+
+numbers = [1, 2, 3, 4, 5, 6, 7, 8]
+
+# using advance slicing
+print(numbers[1:6:2]) # starts from index 1(2), step: picks second items in the list after the start (step: 2(4,5)), stop: excludes index 6(7)
+print('-----')
+
+print(numbers[1:6:3]) # starts from index 1(2), step: picks the third items in the list after the start(step: 3(5)), stop: excludes index 6(7)
+print('-----')
+
+# assigning new values to a list by using slicing
+letters = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h']
+
+# reassigning values in the above list
+letters[:3] = ['i', 'j', 'k'] # starts from a - c (reassigns values of a - c) and d excluded as index(3)
+print(letters)
+print('-----')

@@ -87,3 +87,46 @@ for box in range(20):
 # Robot ends the loop
 print('Task Completed')
 print('-----')
+
+# using the while loop to print multiplication table
+
+number = int(input('Enter a number: '))
+
+count = 1
+
+while count <=10:
+    product = number * count
+    print(number, 'x', count, '=', product)
+    count = count + 1
+print('-----')
+
+# reverse of multiplication table from 10 - 1
+
+count = 10
+
+while count >=1:
+    product = number * count
+    print(number, 'x', count, '=', product)
+    count = count -1
+print('-----')
+
+# using the for loop to print the multiplication table
+
+number = int(input('Enter an integer: '))
+
+for count in range(1,11):
+    product = number * count
+    print(number, 'x', count, '=', product)
+print('-----')
+
+# create a program to find the sum of numbers from 1 - 100
+# EXPECTION: Result = 1 + 2 + 3 + ... + 100
+
+sum = ""
+for i in range(100):
+    if i == 0:
+        sum = sum + '1'
+    else:
+        sum = sum + f'+{i + 1}'
+print(sum)
+print('-----')
